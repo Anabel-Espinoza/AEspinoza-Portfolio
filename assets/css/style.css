@@ -1,0 +1,212 @@
+/* variables for repeated colors */
+:root{
+    --blue:rgb(162, 216, 229);
+    --orange: rgb(230, 128, 91);
+}
+
+/* page reset and webpage general format */
+* { 
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+body {
+    font-family: sans-serif;
+    line-height: 1;
+    min-height: 100vw;
+    background-color: black;
+    font-family: Aboreto;
+}
+
+a {
+    text-decoration: none;
+    color:black;
+}
+
+/* Nav bar format */
+nav {
+    display: flex;
+    background-color: var(--orange);
+    align-items: center;
+    min-height: 3em;
+    justify-content: center;
+    gap:30px;
+    padding: 1rem 0;
+    font-family: Aboreto;
+    font-weight: bolder;
+}
+
+nav a:hover {
+    transform:scale(1.05);
+    font-weight: bold;
+}
+
+/* hero section */
+.hero {
+    font-family: Aboreto, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    justify-content:flex-start;
+    align-items:flex-start;
+    margin:0;
+    flex-direction: column;
+    padding: 40px;
+    gap:0px;
+    min-height: 650px;
+    background-image: url(../images/Copy-ales-nesetril-Im7lZjxeLhg-unsplash.jpg);
+    background-size: cover;
+}
+
+header {
+    padding-top:10%;
+    line-height: 40%;
+}
+
+.title {
+    color:var(--blue);
+    font-size: clamp(3rem, 5vh, 6rem);
+    font-family: raleway;
+}
+
+.subtitle {
+    color: var(--orange);
+    font: 1.5rem;
+}
+
+header p{
+    padding: 30% 0;
+    color:white;
+    font: 2em;
+}
+
+/* Section headers */
+.headers {
+    flex:1;
+    font-size:1.5em;
+    text-align: center;
+    font-weight: bolder;
+    width: 100px;
+    border-right:var(--blue);
+}
+
+/* About Me Section */
+.AboutMe {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 2% 3%;
+    margin:2% 0;
+    background-color:var(--orange);
+}
+
+.my-info {
+    flex: 4;
+    line-height: 2.5rem;
+    padding: 3%;
+    font-size: 1.2rem;
+}
+
+.my-picture {
+    flex: 0;
+    max-width: 15%;
+    border-radius: 50%;
+    border: black thin solid;
+}
+
+/* My Work section */
+.Work {
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0% 5%;
+    min-height: 400px;
+    background-color: var(--blue);
+}
+
+.cards {
+    margin: 4% 5rem;
+    flex: 5;
+    display: flex;
+    flex-wrap: wrap;
+    gap:5%;
+    align-items: center;
+    justify-content:space-between;
+}
+
+.workcard{
+    flex: 1;
+    margin: 1% 0;
+    border: var(--orange) thin solid;
+    background-size: cover;
+    min-width:300px;
+    height:250px;
+    color:black;
+}
+
+.projects {
+    background: rgba(255, 243, 243, 0.767);
+    width: fit-content;
+    border:solid thin var(--orange);
+}
+
+.projects:hover {
+    cursor:pointer;
+}
+
+.front-end {
+    background-image: url(../images/tarn-nguyen-Y81AG3jHv6Q-unsplash.jpg);
+}
+
+.back-end{
+    background-image: url(../images/christin-hume-Hcfwew744z4-unsplash.jpg);
+}
+
+.DataBase {
+    background-image: url(../images/ian-battaglia-9drS5E_Rguc-unsplash.jpg);
+}
+
+.WebApp {
+    background-image:url(../images/tetiana-shyshkina-1_p9pYF-Lao-unsplash.jpg);
+}
+
+.workcard:hover {
+    border:thick solid var(--orange);
+    transform:scale(1.05);
+}
+
+.ContactMe {
+    display: flex;
+    flex-wrap:wrap;
+    align-items: center;
+    padding: 0 3%;
+    margin: 2% 0;
+    background-color: var(--orange);
+}
+
+.contactinfo {
+    flex: 4;
+    color:black;
+    line-height: 2.5rem;
+    padding: 3% 5%;
+}
+
+.contactinfo img{
+    height:20px;
+    margin-right:10px;
+}
+
+@media screen and (max-width: 768px) {
+    nav,
+    .cards,
+    .AboutMe,
+    .Work,
+    .ContactMe {
+      flex-direction: column;
+    }
+  }
