@@ -58,7 +58,7 @@ nav a:hover {
     flex-direction: column;
     padding: 40px;
     gap:0px;
-    min-height: 650px;
+    min-height: 450px;
     background-image: url(../images/Copy-ales-nesetril-Im7lZjxeLhg-unsplash.jpg);
     background-size: cover;
 }
@@ -70,7 +70,7 @@ header {
 
 .title {
     color:var(--blue);
-    font-size: clamp(3rem, 5vh, 6rem);
+    font-size: 3rem;
     font-family: raleway;
 }
 
@@ -109,7 +109,7 @@ header p{
     flex: 4;
     line-height: 2.5rem;
     padding: 3%;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 .my-picture {
@@ -208,5 +208,27 @@ header p{
     .Work,
     .ContactMe {
       flex-direction: column;
+    }
+
+    .hero{
+        padding:0;
+        line-height: 3rem;
+        flex-wrap: wrap;
+        gap:3rem;
+        font-size: 60%;
+        background-image: url(../images/Mini-hero.jpg);
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    header p {
+        padding: 2% 0;
+    }
+
+    .cards{
+        flex-grow: 1;
+        margin: 2% 0;
     }
   }
