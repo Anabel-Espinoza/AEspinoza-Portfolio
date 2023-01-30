@@ -9,6 +9,16 @@
     box-sizing: border-box;
 }
 
+body {
+    margin:0;
+    padding: 0;
+    font-family: sans-serif;
+    line-height: 1;
+    min-height: 100vw;
+    background-color: black;
+    font-family: Aboreto;
+}
+
 img {
     max-width: 100%;
 }
@@ -17,17 +27,15 @@ ul, ol {
     list-style: none;
 }
 
-body {
-    font-family: sans-serif;
-    line-height: 1;
-    min-height: 100vw;
-    background-color: black;
-    font-family: Aboreto;
-}
-
 a {
     text-decoration: none;
     color:black;
+}
+
+/* Header format */
+header {
+    line-height: 40%;
+    max-height: 750px;
 }
 
 /* Nav bar format */
@@ -38,12 +46,13 @@ nav {
     min-height: 3em;
     justify-content: center;
     gap:30px;
-    padding: 1rem 0;
+    padding: 3%;
+    width:100%;
     font-family: Aboreto;
     font-weight: bolder;
 }
 
-nav a:hover {
+.navlink:hover {
     transform:scale(1.05);
     font-weight: bold;
 }
@@ -54,35 +63,36 @@ nav a:hover {
     display: flex;
     justify-content:flex-start;
     align-items:flex-start;
-    margin:0;
     flex-direction: column;
+    flex-wrap: wrap;
     padding: 40px;
-    gap:0px;
-    min-height: 450px;
     background-image: url(../images/Copy-ales-nesetril-Im7lZjxeLhg-unsplash.jpg);
     background-size: cover;
 }
 
-header {
-    padding-top:10%;
-    line-height: 40%;
-}
-
 .title {
+    flex: 1 0 50%;
     color:var(--blue);
     font-size: 3rem;
     font-family: raleway;
 }
 
-.subtitle {
+.my-name {
     color: var(--orange);
-    font: 1.5rem;
+    font-weight: 4px;
 }
 
-header p{
-    padding: 30% 0;
+.subtitle {
+    flex:1;
+    color: var(--blue);
+    font: 3rem;
+}
+
+.headertext {
+    flex:1;
+    padding: 10% 0;
     color:white;
-    font: 2em;
+    font: 3rem;
 }
 
 /* Section headers */
@@ -161,6 +171,8 @@ header p{
 
 .front-end {
     background-image: url(../images/tarn-nguyen-Y81AG3jHv6Q-unsplash.jpg);
+    flex: 2 1 100%;
+    min-height: 400px;
 }
 
 .back-end{
@@ -173,6 +185,10 @@ header p{
 
 .WebApp {
     background-image:url(../images/tetiana-shyshkina-1_p9pYF-Lao-unsplash.jpg);
+}
+
+.WebAppNew {
+    background-image: url(../images/fili-santillan-qp51FQhBnS0-unsplash.jpg);
 }
 
 .workcard:hover {
@@ -201,6 +217,16 @@ header p{
     margin-right:10px;
 }
 
+@media screen and (max-width: 1097px) {
+    .hero{
+        padding: 20px;
+        line-height: 3rem;
+        gap:3rem;
+        font-size: 60%;
+        background-image: url(../images/Mini-hero.jpg);
+    }
+  }
+
 @media screen and (max-width: 768px) {
     nav,
     .cards,
@@ -210,25 +236,16 @@ header p{
       flex-direction: column;
     }
 
-    .hero{
-        padding:0;
-        line-height: 3rem;
-        flex-wrap: wrap;
-        gap:3rem;
-        font-size: 60%;
-        background-image: url(../images/Mini-hero.jpg);
-    }
-
     .title {
         font-size: 2rem;
     }
 
-    header p {
-        padding: 2% 0;
+   .headertext {
+        padding: 0;
     }
 
     .cards{
-        flex-grow: 1;
+        flex-grow: 1 0 90%;
         margin: 2% 0;
     }
   }
