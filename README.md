@@ -12,9 +12,9 @@ N/A
 ## Usage
 
 The site is responsive for different screens and devices. It consists of the following parts:
-- Navigation bar with the links to the sections: About Me, My Work, Contact Information, and Resume.
-- My Work section uses placeholder images and titles that will be updated once the developer has real applications to showcase. The biggest image corresponds to the most important app and for now, it just links to the GitHub profile. 
-- Contact Me section has a link to send email to the developer and a link to her GitHub profile. Linkedin profile is not available, but the link will be updated once it's created. Resume file has not been completed, so the link in the navigation bar just displays a document stating it will be updated soon.
+- Navigation bar with the links to the sections: About Me, My Work, Contact Information, and  link to the Resume file.
+- My Work section uses placeholder images and titles that will be updated once the developer has real applications to show. The biggest image corresponds to the most important app and for now, it just links to the GitHub profile. 
+- Contact Me section has a link email to the developer, to her GitHub profile, phone number, and LinkedIn profile.
 
 **Website link: (https://anabel-espinoza.github.io/AEspinoza-Portfolio/)**
 
