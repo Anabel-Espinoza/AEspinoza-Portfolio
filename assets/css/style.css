@@ -172,13 +172,15 @@ nav {
 }
 
 .front-end {
-    background-image: url(../images/NightOwl-Home.html.png);
+    background-image: url(../images/HomeHub-Logo.png);
     flex: 2 1 100%;
-    min-height: 300px;
+    max-height: 300px;
 }
 
 .back-end{
-    background-image: url(../images/christin-hume-Hcfwew744z4-unsplash.jpg);
+    background-image: url(../images/NightOwl-Home.html.png);
+    max-width: 30%;
+    max-height: 300px;
 }
 
 .DataBase {
